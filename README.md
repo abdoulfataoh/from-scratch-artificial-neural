@@ -20,18 +20,20 @@ We consider a dataset containing $m$ observations and $n$ features.
 In this example, we have 3 observations and 2 features:
 
 $$
-X =
+\begin{aligned}
+X &=
 \begin{pmatrix}
 x_1^{(1)} & x_2^{(1)} \\
 x_1^{(2)} & x_2^{(2)} \\
 x_1^{(3)} & x_2^{(3)}
 \end{pmatrix}
-\qquad
-W =
+\\[1em]
+W &=
 \begin{pmatrix}
 w_1 \\
 w_2
 \end{pmatrix}
+\end{aligned}
 $$
 
 - $X$: input data matrix.
@@ -80,9 +82,9 @@ We use Binary Cross-Entropy (Log Loss) to measure the difference between predict
 $$
 L = -\frac{1}{m}\sum_{i=1}^{m}
 \left[
-y^{(i)}\log(A^{(i)})
+y^{(i)}\log\left(A^{(i)}\right)
 +
-(1-y^{(i)})\log(1-A^{(i)})
+\left(1-y^{(i)}\right)\log\left(1-A^{(i)}\right)
 \right]
 $$
 
@@ -111,7 +113,8 @@ $$
 $$
 \frac{\partial L}{\partial b}
 =
-\frac{1}{m}\sum_{i=1}^{m}(A^{(i)}-y^{(i)})
+\frac{1}{m}\sum_{i=1}^{m}
+\left(A^{(i)}-y^{(i)}\right)
 $$
 
 #### Parameter updates
@@ -131,5 +134,3 @@ b = b - \alpha \cdot \frac{\partial L}{\partial b}
 $$
 
 Where $\alpha$ represents the learning rate.
-
-
