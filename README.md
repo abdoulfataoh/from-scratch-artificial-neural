@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="docs/artifial_neural.png" width="80" height="80" alt="Logo">
+  <img src="docs/artifial_neural.png" width="500" height="8
+  220" alt="Logo">
 </p>
 
 <h3 align="center">Artificial Neural</h3>
